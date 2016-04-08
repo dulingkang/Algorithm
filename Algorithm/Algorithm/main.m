@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 #import "AlgorithmHelper.h"
+#import "StringAlgorithm.h"
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -18,6 +19,8 @@ int main(int argc, char * argv[]) {
         for (int i = 0; i < len; i++) {
             NSLog(@"%d",a[i]);
         }
+        
+        [StringAlgorithm testLeftRotateString];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

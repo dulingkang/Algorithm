@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295DE7021CAE08DE00B9BBD6 /* StringAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 295DE7011CAE08DE00B9BBD6 /* StringAlgorithm.m */; };
 		3A47223E1C9D9DD7002465E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A47223D1C9D9DD7002465E4 /* main.m */; };
 		3A4722411C9D9DD7002465E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4722401C9D9DD7002465E4 /* AppDelegate.m */; };
 		3A4722491C9D9DD7002465E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4722481C9D9DD7002465E4 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		295DE7001CAE08DE00B9BBD6 /* StringAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAlgorithm.h; sourceTree = "<group>"; };
+		295DE7011CAE08DE00B9BBD6 /* StringAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAlgorithm.m; sourceTree = "<group>"; };
 		3A4722391C9D9DD7002465E4 /* Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A47223D1C9D9DD7002465E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A47223F1C9D9DD7002465E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +40,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		295DE6FF1CAE08BD00B9BBD6 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				295DE7001CAE08DE00B9BBD6 /* StringAlgorithm.h */,
+				295DE7011CAE08DE00B9BBD6 /* StringAlgorithm.m */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		3A4722301C9D9DD7002465E4 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,7 @@
 		3A47223B1C9D9DD7002465E4 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				295DE6FF1CAE08BD00B9BBD6 /* String */,
 				3A47223F1C9D9DD7002465E4 /* AppDelegate.h */,
 				3A4722401C9D9DD7002465E4 /* AppDelegate.m */,
 				3A4722481C9D9DD7002465E4 /* Assets.xcassets */,
@@ -147,6 +160,7 @@
 			files = (
 				3A4722551C9D9E38002465E4 /* AlgorithmHelper.m in Sources */,
 				3A4722411C9D9DD7002465E4 /* AppDelegate.m in Sources */,
+				295DE7021CAE08DE00B9BBD6 /* StringAlgorithm.m in Sources */,
 				3A47223E1C9D9DD7002465E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +300,7 @@
 				3A4722521C9D9DD7002465E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
