@@ -21,6 +21,7 @@ int main(int argc, char * argv[]) {
         }
         
         [StringAlgorithm testLeftRotateString];
+        [StringAlgorithm testStringContain];
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

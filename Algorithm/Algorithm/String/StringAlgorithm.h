@@ -11,6 +11,8 @@
 @interface StringAlgorithm : NSObject
 
 + (NSString *)leftRotateString:(NSString *)s endIndex:(int)end splitIndex:(int)split;
++ (BOOL)stringContain:(NSString *)longStr shortString:(NSString *)shortStr;
 
 + (void)testLeftRotateString;
++ (void)testStringContain;
 @end

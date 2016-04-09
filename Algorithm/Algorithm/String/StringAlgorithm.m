@@ -35,11 +35,29 @@
     return [NSString stringWithCharacters:characters length:length];
 }
 
++ (BOOL)stringContain:(NSString *)longStr shortString:(NSString *)shortStr {
+    NSInteger hash = 0;
+    for (NSInteger i = 0; i < longStr.length; i++) {
+        hash |= (1 << ([longStr characterAtIndex:i] - 'A'));
+    }
+    for (NSInteger i = 0; i < shortStr.length; i++) {
+        if ((hash & (1 << ([shortStr characterAtIndex:i] - 'A'))) == 0) {
+            return NO;
+        }
+    }
+    return YES;
+}
 #pragma mark - test
 + (void)testLeftRotateString {
     NSString *str = @"abcdef";
     NSString * s = [self leftRotateString:str endIndex:5 splitIndex:2];
     NSLog(@"leftRotateString:%@",s);
+}
+
++ (void)testStringContain {
+    NSString *longStr = @"BCD";
+    NSString *shortStr = @"E";
+    [self stringContain:longStr shortString:shortStr];
 }
 
 @end
