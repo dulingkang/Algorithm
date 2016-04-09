@@ -21,15 +21,16 @@
 + (NSString *)reverseString:(NSString *)s from:(int)from to:(int)to {
     NSInteger length = abs(to - from) + 1;
     unichar characters[length];
+    NSInteger offsetToIndexZero = from;
     while (from < to)
     {
-        characters[to] = [s characterAtIndex:from];
-        characters[from] = [s characterAtIndex:to];
+        characters[to - offsetToIndexZero] = [s characterAtIndex:from];
+        characters[from - offsetToIndexZero] = [s characterAtIndex:to];
         from++;
         to--;
     }
     if (from == to) {
-        characters[from] = [s characterAtIndex:from];
+        characters[from - offsetToIndexZero] = [s characterAtIndex:from];
     }
     return [NSString stringWithCharacters:characters length:length];
 }
