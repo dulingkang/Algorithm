@@ -12,8 +12,20 @@
 		3A4722411C9D9DD7002465E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4722401C9D9DD7002465E4 /* AppDelegate.m */; };
 		3A4722491C9D9DD7002465E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4722481C9D9DD7002465E4 /* Assets.xcassets */; };
 		3A47224C1C9D9DD7002465E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A47224A1C9D9DD7002465E4 /* LaunchScreen.storyboard */; };
-		3A4722551C9D9E38002465E4 /* AlgorithmHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4722541C9D9E38002465E4 /* AlgorithmHelper.m */; };
+		3AD25ECF1CC677DE00E15CB8 /* StringAlgorithmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD25ECE1CC677DE00E15CB8 /* StringAlgorithmTest.m */; };
+		3AD25ED31CC67A1200E15CB8 /* SortAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD25ED21CC67A1200E15CB8 /* SortAlgorithm.m */; };
+		3AD25ED51CC67A5F00E15CB8 /* SortAlgorithmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AD25ED41CC67A5F00E15CB8 /* SortAlgorithmTest.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AD25EC71CC676FC00E15CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A4722311C9D9DD7002465E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A4722381C9D9DD7002465E4;
+			remoteInfo = Algorithm;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		295DE7001CAE08DE00B9BBD6 /* StringAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAlgorithm.h; sourceTree = "<group>"; };
@@ -25,12 +37,23 @@
 		3A4722481C9D9DD7002465E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A47224B1C9D9DD7002465E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A47224D1C9D9DD7002465E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A4722531C9D9E38002465E4 /* AlgorithmHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlgorithmHelper.h; sourceTree = "<group>"; };
-		3A4722541C9D9E38002465E4 /* AlgorithmHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlgorithmHelper.m; sourceTree = "<group>"; };
+		3AD25EC21CC676FC00E15CB8 /* AlgorithmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AD25EC61CC676FC00E15CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AD25ECE1CC677DE00E15CB8 /* StringAlgorithmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAlgorithmTest.m; sourceTree = "<group>"; };
+		3AD25ED11CC67A1200E15CB8 /* SortAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortAlgorithm.h; sourceTree = "<group>"; };
+		3AD25ED21CC67A1200E15CB8 /* SortAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortAlgorithm.m; sourceTree = "<group>"; };
+		3AD25ED41CC67A5F00E15CB8 /* SortAlgorithmTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SortAlgorithmTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3A4722361C9D9DD7002465E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD25EBF1CC676FC00E15CB8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				3A47223B1C9D9DD7002465E4 /* Algorithm */,
+				3AD25EC31CC676FC00E15CB8 /* AlgorithmTests */,
 				3A47223A1C9D9DD7002465E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4722391C9D9DD7002465E4 /* Algorithm.app */,
+				3AD25EC21CC676FC00E15CB8 /* AlgorithmTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +93,7 @@
 		3A47223B1C9D9DD7002465E4 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				3AD25ED01CC679B500E15CB8 /* Sort */,
 				295DE6FF1CAE08BD00B9BBD6 /* String */,
 				3A47223F1C9D9DD7002465E4 /* AppDelegate.h */,
 				3A4722401C9D9DD7002465E4 /* AppDelegate.m */,
@@ -75,8 +101,6 @@
 				3A47224A1C9D9DD7002465E4 /* LaunchScreen.storyboard */,
 				3A47224D1C9D9DD7002465E4 /* Info.plist */,
 				3A47223C1C9D9DD7002465E4 /* Supporting Files */,
-				3A4722531C9D9E38002465E4 /* AlgorithmHelper.h */,
-				3A4722541C9D9E38002465E4 /* AlgorithmHelper.m */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
@@ -87,6 +111,25 @@
 				3A47223D1C9D9DD7002465E4 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AD25EC31CC676FC00E15CB8 /* AlgorithmTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AD25EC61CC676FC00E15CB8 /* Info.plist */,
+				3AD25ECE1CC677DE00E15CB8 /* StringAlgorithmTest.m */,
+				3AD25ED41CC67A5F00E15CB8 /* SortAlgorithmTest.m */,
+			);
+			path = AlgorithmTests;
+			sourceTree = "<group>";
+		};
+		3AD25ED01CC679B500E15CB8 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				3AD25ED11CC67A1200E15CB8 /* SortAlgorithm.h */,
+				3AD25ED21CC67A1200E15CB8 /* SortAlgorithm.m */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,17 +152,40 @@
 			productReference = 3A4722391C9D9DD7002465E4 /* Algorithm.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3AD25EC11CC676FC00E15CB8 /* AlgorithmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AD25ECB1CC676FC00E15CB8 /* Build configuration list for PBXNativeTarget "AlgorithmTests" */;
+			buildPhases = (
+				3AD25EBE1CC676FC00E15CB8 /* Sources */,
+				3AD25EBF1CC676FC00E15CB8 /* Frameworks */,
+				3AD25EC01CC676FC00E15CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AD25EC81CC676FC00E15CB8 /* PBXTargetDependency */,
+			);
+			name = AlgorithmTests;
+			productName = AlgorithmTests;
+			productReference = 3AD25EC21CC676FC00E15CB8 /* AlgorithmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3A4722311C9D9DD7002465E4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = com.shawn;
 				TargetAttributes = {
 					3A4722381C9D9DD7002465E4 = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					3AD25EC11CC676FC00E15CB8 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3A4722381C9D9DD7002465E4;
 					};
 				};
 			};
@@ -137,6 +203,7 @@
 			projectRoot = "";
 			targets = (
 				3A4722381C9D9DD7002465E4 /* Algorithm */,
+				3AD25EC11CC676FC00E15CB8 /* AlgorithmTests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +218,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AD25EC01CC676FC00E15CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -158,14 +232,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4722551C9D9E38002465E4 /* AlgorithmHelper.m in Sources */,
 				3A4722411C9D9DD7002465E4 /* AppDelegate.m in Sources */,
 				295DE7021CAE08DE00B9BBD6 /* StringAlgorithm.m in Sources */,
 				3A47223E1C9D9DD7002465E4 /* main.m in Sources */,
+				3AD25ED31CC67A1200E15CB8 /* SortAlgorithm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD25EBE1CC676FC00E15CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD25ECF1CC677DE00E15CB8 /* StringAlgorithmTest.m in Sources */,
+				3AD25ED51CC67A5F00E15CB8 /* SortAlgorithmTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AD25EC81CC676FC00E15CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A4722381C9D9DD7002465E4 /* Algorithm */;
+			targetProxy = 3AD25EC71CC676FC00E15CB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A47224A1C9D9DD7002465E4 /* LaunchScreen.storyboard */ = {
@@ -281,6 +372,35 @@
 			};
 			name = Release;
 		};
+		3AD25EC91CC676FC00E15CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = AlgorithmTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.AlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithm.app/Algorithm";
+			};
+			name = Debug;
+		};
+		3AD25ECA1CC676FC00E15CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = AlgorithmTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SH.AlgorithmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Algorithm.app/Algorithm";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -301,6 +421,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3AD25ECB1CC676FC00E15CB8 /* Build configuration list for PBXNativeTarget "AlgorithmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AD25EC91CC676FC00E15CB8 /* Debug */,
+				3AD25ECA1CC676FC00E15CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
